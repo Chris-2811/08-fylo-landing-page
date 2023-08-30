@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body > div {
+  background-position: center 875px;
+}
+
+.ficon:hover {
+  filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
+    brightness(105%) contrast(104%);
+}
+
+#footer a:hover {
+  color: white;
+  font-weight: 700;
+}
+
+#socials > div:hover #icon {
+  filter: invert(0.12) sepia(1) saturate(11.3) hue-rotate(86.4deg)
+    brightness(1.16);
+}
