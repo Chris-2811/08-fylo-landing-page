@@ -19,7 +19,12 @@ module.exports = {
       "curvy-dark-mode": "url('../images/bg-curvy-desktop.svg')",
       "curvy-dark-mode-mobile": "url('../images/bg-curvy-mobile.svg')",
     }),
-    extend: {},
+    extend: {
+      boxShadow: {
+        xl: "5px 5px 8px 4px rgba(56, 56, 56, 0.10)",
+        xxl: "5px 5px 8px 0px rgba(0, 0, 0, 0.25)",
+      },
+    },
   },
   plugins: [],
 };
