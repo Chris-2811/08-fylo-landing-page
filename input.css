@@ -8,7 +8,7 @@
 }
 
 body > div {
-  background-position: center 875px;
+  background-position: center 800px;
 }
 
 .ficon:hover {
@@ -24,4 +24,10 @@ body > div {
 #socials > div:hover #icon {
   filter: invert(0.12) sepia(1) saturate(11.3) hue-rotate(86.4deg)
     brightness(1.16);
+}
+
+@media (max-width: 768px) {
+  body > div {
+    background-position: center 68vw;
+  }
 }

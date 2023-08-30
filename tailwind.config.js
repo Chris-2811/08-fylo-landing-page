@@ -17,6 +17,7 @@ module.exports = {
     },
     backgroundImage: (theme) => ({
       "curvy-dark-mode": "url('../images/bg-curvy-desktop.svg')",
+      "curvy-dark-mode-mobile": "url('../images/bg-curvy-mobile.svg')",
     }),
     extend: {},
   },

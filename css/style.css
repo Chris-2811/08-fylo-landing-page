@@ -566,18 +566,6 @@ video {
   left: 2rem;
 }
 
-.left-\[50\%\] {
-  left: 50%;
-}
-
-.left-2 {
-  left: 0.5rem;
-}
-
-.left-4 {
-  left: 1rem;
-}
-
 .-z-10 {
   z-index: -10;
 }
@@ -675,12 +663,12 @@ video {
   height: 2rem;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
 .w-20 {
   width: 5rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-40 {
@@ -707,36 +695,12 @@ video {
   width: 135px;
 }
 
+.w-\[72px\] {
+  width: 72px;
+}
+
 .w-full {
   width: 100%;
-}
-
-.w-7 {
-  width: 1.75rem;
-}
-
-.w-28 {
-  width: 7rem;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-14 {
-  width: 3.5rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-12 {
-  width: 3rem;
-}
-
-.w-\[74px\] {
-  width: 74px;
 }
 
 .max-w-3xl {
@@ -751,8 +715,8 @@ video {
   max-width: 1240px;
 }
 
-.max-w-\[1260px\] {
-  max-width: 1260px;
+.max-w-\[1340px\] {
+  max-width: 1340px;
 }
 
 .max-w-\[339px\] {
@@ -773,11 +737,6 @@ video {
 
 .translate-y-\[50\%\] {
   --tw-translate-y: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-\[50\%\] {
-  --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -889,23 +848,12 @@ video {
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
 }
 
-.bg-light-red {
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 100% 63% / var(--tw-bg-opacity));
+.bg-curvy-dark-mode-mobile {
+  background-image: url('../images/bg-curvy-mobile.svg');
 }
 
-.bg-curvy-dark-mode {
-  background-image: url('../images/bg-curvy-desktop.svg');
-}
-
-.from-\[\#63E1D9\] {
-  --tw-gradient-from: #63E1D9 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(99 225 217 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-\[\#34A0CD\] {
-  --tw-gradient-to: #34A0CD var(--tw-gradient-to-position);
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-no-repeat {
@@ -990,14 +938,6 @@ video {
   line-height: 2rem;
 }
 
-.text-\[10px\] {
-  font-size: 10px;
-}
-
-.text-\[7px\] {
-  font-size: 7px;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1043,6 +983,11 @@ video {
   color: hsl(176 68% 64% / var(--tw-text-opacity));
 }
 
+.text-dark-blue-main {
+  --tw-text-opacity: 1;
+  color: hsl(218 28% 13% / var(--tw-text-opacity));
+}
+
 .text-light-red {
   --tw-text-opacity: 1;
   color: hsl(0 100% 63% / var(--tw-text-opacity));
@@ -1051,11 +996,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
-}
-
-.text-dark-blue-main {
-  --tw-text-opacity: 1;
-  color: hsl(218 28% 13% / var(--tw-text-opacity));
 }
 
 .caret-dark-blue-main {
@@ -1087,7 +1027,7 @@ video {
 }
 
 body > div {
-  background-position: center 875px;
+  background-position: center 800px;
 }
 
 .ficon:hover {
@@ -1103,6 +1043,12 @@ body > div {
 #socials > div:hover #icon {
   filter: invert(0.12) sepia(1) saturate(11.3) hue-rotate(86.4deg)
     brightness(1.16);
+}
+
+@media (max-width: 768px) {
+  body > div {
+    background-position: center 68vw;
+  }
 }
 
 .placeholder\:text-dark-blue-main::-moz-placeholder {
@@ -1125,8 +1071,9 @@ body > div {
   border-color: hsl(0 0% 100% / var(--tw-border-opacity));
 }
 
-.group:hover .group-hover\:w-full {
-  width: 100%;
+.hover\:bg-\[\#8ADAE3\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(138 218 227 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:fill-white {
@@ -1195,6 +1142,14 @@ body > div {
     width: 2.5rem;
   }
 
+  .md\:w-12 {
+    width: 3rem;
+  }
+
+  .md\:w-14 {
+    width: 3.5rem;
+  }
+
   .md\:w-2\/3 {
     width: 66.666667%;
   }
@@ -1217,14 +1172,6 @@ body > div {
 
   .md\:w-\[280px\] {
     width: 280px;
-  }
-
-  .md\:w-12 {
-    width: 3rem;
-  }
-
-  .md\:w-14 {
-    width: 3.5rem;
   }
 
   .md\:max-w-\[506px\] {
@@ -1269,6 +1216,10 @@ body > div {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:bg-curvy-dark-mode {
+    background-image: url('../images/bg-curvy-desktop.svg');
   }
 
   .md\:px-20 {
@@ -1360,5 +1311,11 @@ body > div {
 
   .lg\:leading-\[50px\] {
     line-height: 50px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:max-w-\[1440px\] {
+    max-width: 1440px;
   }
 }
